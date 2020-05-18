@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Simple Demo of Log Tool</title>
+   <meta name="viewport" content="width=device-width">
+   <style>
+      body {
+         font-family: sans-serif;
+      }
+   </style>
+</head>
+<body>
+
+<p>Open browser console to see examples.</p>
+
+<script type="text/javascript">
+   // use dynamic imports (not required)
+   import('../src/index.js').then(module => {
+      const logger = module.logTool(true, {
+         namespace: 'Page:'
+      });
+      logger('This is the page talking!');
+
+      // omit the enable/disable if you choose
+      const logThing = module.logTool({namespace: 'More Page:'});
+      logThing('More page logging?');
+   })
+</script>
+<!-- Loading as a module (not required) -->
+<script type="module" src="./log.js"></script>
+
+</body>
+</html>

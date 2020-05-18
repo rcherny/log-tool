@@ -1,0 +1,15 @@
+{
+   "name": "log-tool",
+   "version": "0.1.0",
+   "description": "Minimal console logging tool",
+   "main": "src/index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/rcherny/log-tool.git"
+   },
+   "author": "Rob Cherny <rcherny@gmail.com>",
+   "license": "MIT"
+}
