@@ -43,10 +43,10 @@ loggerC('Logging!') // Logging!
 
 ## Todo
 
-- [] Change so you do no have to pass a method in to use a different method
-- [] Use session storage for global overrides
-- [] Actual unit tests
-- [] Push to npm (maybe)
+- [ ] Change so you do no have to pass a method in to use a different method
+- [ ] Use session storage for global overrides
+- [ ] Actual unit tests
+- [ ] Push to npm (maybe)
 
 ## Other Logging Tools
 
