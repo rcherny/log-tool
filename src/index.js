@@ -11,13 +11,13 @@
  * @return {Function} function that acts like console.log and friends.
  * 
  * @examples
- *   import { logTool } from './log-tool/src'
- *   const log = debug(true); // console.log output
- *   const logger = debug(true {namespace: 'logger: '}); // console.log prepended with 'logger: '
- *   const tracer = debug(true, {method: 'trace'}); // output console.trace stack
- *   const trace = debug(false, {method: 'trace'}); // console.trace suppressed
- *   const logB = debug(false); // suppressed! (different logger)
- *   const logC = debug({namespace: 'Enabled by default'}); // if no enabled is passed in, always enable
+ *   import logTool from '@rmc2/log-tool'; // note: not published on npm (yet)
+ *   const log = logTool(true); // console.log output
+ *   const logger = logTool(true {namespace: 'logger: '}); // console.log prepended with 'logger: '
+ *   const tracer = logTool(true, {method: 'trace'}); // output console.trace stack
+ *   const trace = logTool(false, {method: 'trace'}); // console.trace suppressed
+ *   const logB = logTool(false) // suppressed! (different logger);
+ *   const logC = logTool({namespace: 'Enabled by default'}); // if no enabled is passed in, the 
  */
 const logTool = (enable = true, props = {}) => {
    if (typeof enable === 'object') {
@@ -39,3 +39,5 @@ const logTool = (enable = true, props = {}) => {
 export {
    logTool
 }
+
+export default logTool;

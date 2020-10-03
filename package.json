@@ -1,5 +1,5 @@
 {
-   "name": "log-tool",
+   "name": "@rmc2/logTool",
    "version": "0.1.0",
    "description": "Minimal console logging tool",
    "main": "src/index.js",

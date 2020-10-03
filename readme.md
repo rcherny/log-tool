@@ -18,7 +18,7 @@ To run the example, run a static server in this root folder, and load [the eampl
 Simply import the module and run with it.
 
 ```
-import { logTool } from 'log-tool';
+import { logTool } from '@rmc2/log-tool';
 
 // Create a logger:
 const loggerA = logTool(true, {
@@ -46,7 +46,8 @@ loggerC('Logging!') // Logging!
 - [ ] Change so you do no have to pass a method in to use a different method
 - [ ] Use session storage for global overrides
 - [ ] Actual unit tests
-- [ ] Push to npm (maybe)
+- [ ] Less verbose API 
+- [ ] Push to npm (...)
 
 ## Other Logging Tools
 
